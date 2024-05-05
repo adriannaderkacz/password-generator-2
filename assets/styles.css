@@ -261,3 +261,93 @@ span {
     cursor: pointer;
     transform: translateY(-10%);
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+.container {
+    width: 90%;
+    max-width: none;
+    padding: 30px 20px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.h1-color {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+.password-generation,
+.length-slider,
+.uppercase-selection,
+.lowercase-selection,
+.number-selection,
+.symbol-selection {
+    width: 100%;
+}
+
+.length-slider p,
+.uppercase-selection p,
+.lowercase-selection p,
+.number-selection p,
+.symbol-selection p {
+    font-size: 0.8em;
+}
+
+.switch {
+    width: 40px;
+    height: 20px;
+}
+
+.slider-check:before {
+    height: 15px;
+    width: 15px;
+}
+
+button {
+    padding: 8px 10px;
+    font-size: 0.9em;
+}
+
+.password p {
+    font-size: 0.9em;
+    padding: 6px 10px;
+}
+
+input:checked + .slider-check:before {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+hr {
+    margin-top: 20px;
+}
+}
+
+@media (max-width: 480px) {
+h1, .h1-color {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 0.9em;
+}
+
+.length-slider, 
+.uppercase-selection, 
+.lowercase-selection, 
+.number-selection, 
+.symbol-selection {
+    padding: 12px 5px;
+}
+
+button {
+    font-size: 0.85em;
+}
+}
